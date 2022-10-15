@@ -10,9 +10,30 @@
 \usepackage{enumitem}
 \usepackage{longtable}
 \usepackage{array,booktabs,enumitem}
+\usepackage{titlesec}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage[nameinlink]{cleveref}
 \usepackage[backend=biber, style=authoryear, sorting=ynt, maxnames=1]{biblatex}
+
+\setcounter{secnumdepth}{3}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\let\orgdescriptionlabel\descriptionlabel
+\renewcommand*{\descriptionlabel}[1]{%
+  \let\orglabel\label
+  \let\label\@gobble
+  \phantomsection
+  \edef\@currentlabel{#1}%
+  %\edef\@currentlabelname{#1}%
+  \let\label\orglabel
+  \orgdescriptionlabel{#1}%
+}
+\makeatother
 
 \makeatletter
 \newcommand*{\linkblx@startlink}[1]{%
@@ -171,46 +192,32 @@ Inpainting has existed with varying quality for over a decade. Early methods wor
 
 One way of performing image inpainting is using deep generative models to learn the conditional distribution of output images (complete images) given the input (masked image). The models should be able to capture multi-modal distributions in the high-dimensional space of images. GANs are used widely, but often require auxiliary objectives (e.g. on structure) and struggle with sample diversity \parencite{Saharia-2022}. Instead, inpainting can be implemented using DDPMs conditioned on the unmasked regions of the image. Specifically, the conditional diffusion models have the form $p(y|x)$ where $x$ is a masked image and $y$ is filled in. An example is shown in \autoref{fig:Inpainting}.
 
+\newpage
 \section{Work to be Undertaken}
 
 \subsection{Base}
 
-\makeatletter
-\let\orgdescriptionlabel\descriptionlabel
-\renewcommand*{\descriptionlabel}[1]{%
-  \let\orglabel\label
-  \let\label\@gobble
-  \phantomsection
-  \edef\@currentlabel{#1}%
-  %\edef\@currentlabelname{#1}%
-  \let\label\orglabel
-  \orgdescriptionlabel{#1}%
-}
-\makeatother
+\subsubsection{Task 1}
+I will implement DDPMs for unconditional image generation according to \cite{Ho-2020}. This initial implementation will be on smaller images than the paper uses (likely $32 \times 32$). This acts as a base for conditional image generation.
 
-% TODO: complete
-\begin{description}
-\item[Task 1] I will implement DDPMs for unconditional image generation according to \cite{Ho-2020}. This initial implementation will be on smaller images than the paper uses (likely $32 \times 32$). This acts as a base for conditional image generation.
-\begin{description}
-\item[Starting Point] I plan on making this implementation from scratch. The paper does provide an official code implementation which I may refer to compare results.
-\end{description}
-\item[Task 2] I will extend \textbf{Task 1} with conditional image generation to perform image inpainting according to \cite{Saharia-2022}. Here, I will increase the image resolution used to match the paper.
-\begin{description}
-\item[Starting Point] There is no official implementation of this work. The sample outputs and image masks from the paper are available for comparison.
-\end{description}
-\end{description}
+\noindent\textbf{Starting Point:} I plan on making this implementation from scratch. The paper does provide an official code implementation which I may refer to for comparison of results.
+
+\subsubsection{Task 2}
+I will extend \textbf{Task 1} with conditional image generation to perform image inpainting according to \cite{Saharia-2022}. Here, I will increase the image resolution used to match the literature.
+
+\noindent\textbf{Starting Point:} There is no official implementation of this work. The sample outputs and image masks from the paper are available for comparison.
 
 \subsection{Extensions}
-\begin{description}
-\item[Task 3] I will incorporate the improvements detailed in various literature into \textbf{Task 2} (including \cite{Nichol-2021}) and compare my results to \cite{Saharia-2022}.
-\begin{description}
-\item[Starting Point] \cite{Saharia-2022} releases an official code implementation, but not for inpainting. This will be my own implementation from scratch.
-\end{description}
-\item[Task 4] I will create a web-application that uses semantic segmentation and the DDPM developed in \textbf{Task 3} to allow a user to upload an image and mask semantic regions so the DDPM can fill it in.
-\begin{description}
-\item[Starting Point] There are many existing implementations of semantic segmentation, so I will focus on incorporating this into the work flow and engineering a web app rather than re-implementing it.
-\end{description}
-\end{description}
+
+\subsubsection{Task 3}
+I will incorporate the improvements detailed in various literature into \textbf{Task 2} (including \cite{Nichol-2021}) and compare my results to \cite{Saharia-2022}.
+
+\noindent\textbf{Starting Point:} \cite{Saharia-2022} releases an official code implementation, but not for inpainting. This will be my own implementation from scratch.
+
+\subsubsection{Task 4}
+I will create a web-application that uses semantic segmentation and the DDPM developed in \textbf{Task 3} to allow a user to upload an image and mask semantic regions so the DDPM can fill it in.
+
+\noindent\textbf{Starting Point: } There are many existing implementations of semantic segmentation, so I will focus on incorporating this into the work flow and engineering a web app rather than re-implementing it.
 
 \subsection{Challenges and Risks}
 
@@ -229,6 +236,7 @@ One way of performing image inpainting is using deep generative models to learn 
 \end{description}
 \end{description}
 
+\newpage
 \section{Success Criteria}
 
 \subsection{Evaluation Methodology}
@@ -241,35 +249,35 @@ For image inpainting, I will use FID, IS, Perceptual Distance (PD) and Classific
 
 \subsection{Base Success Criteria}
 
-\begin{itemize}
-    \item \textbf{Task 1}
-    \begin{itemize}
-        \item Successfully implement DDPMs for unconditional image generation
-        \item Measure performance of model using FID, IS, Precision and Recall
-    \end{itemize}
-    \item \textbf{Task 2}
-    \begin{itemize}
-        \item Successfully implement DDPMs for image generation conditioned on a masked image for image inpainting
-        \item Measure performance of model using FID, IS, CA and PD
-    \end{itemize}
-\end{itemize}
+\subsubsection{Task 1}
+
+\begin{enumerate}
+    \item Successfully implement DDPMs for unconditional image generation
+    \item Measure performance of model using FID, IS, Precision and Recall
+\end{enumerate}
+
+\subsubsection{Task 2}
+\begin{enumerate}
+    \item Successfully implement DDPMs for image generation conditioned on a masked image for image inpainting
+    \item Measure performance of model using FID, IS, CA and PD
+\end{enumerate}
 
 \subsection{Extension Success Criteria}
 
-\begin{itemize}
-    \item \textbf{Task 3}
-    \begin{itemize}
-        \item Successfully incorporate changes from literature to improve performance of conditional DDPM for image inpainting
-        \item Successfully incorporate changes from literature to improve training time of DDPM
-        \item Measure performance of model using FID, IS, CA and PD
-    \end{itemize}
-    \item \textbf{Task 4}
-    \begin{itemize}
-        \item Successfully implement a semantic segmentation network that works with the chosen image resolution
-        \item Successfully implement pipeline made of segmentation network and DDPM
-        \item Successfully implement a web-app allowing users to use the pipeline to remove subjects from images and realistically replace them
-    \end{itemize}
-\end{itemize}
+\subsubsection{Task 3}
+\begin{enumerate}
+    \item Successfully incorporate changes from literature to improve performance of conditional DDPM for image inpainting
+    \item Successfully incorporate changes from literature to improve training time of DDPM
+    \item Measure performance of model using FID, IS, CA and PD
+\end{enumerate}
+\subsubsection{Task 4}
+\begin{enumerate}
+    \item Successfully implement a semantic segmentation network that works with the chosen image resolution
+    \item Successfully implement pipeline made of segmentation network and DDPM
+    \item Successfully implement a web-app allowing users to use the pipeline to remove subjects from images and realistically replace them
+\end{enumerate}
+
+\newpage
 
 \section{Work Packages and Milestones}
 
@@ -286,9 +294,9 @@ The table below outlines my planned timetable for the project. \textbf{Tx} refer
     1 and 2  &
     17/10 -- 30/10 &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item \textbf{T1} Make detailed notes on DDPMs
-        \item \textbf{T1} Experiment with the network architectures used in the literature
-        \item \textbf{Write-up} Write Introduction
+      \item \textbf{T1} Make detailed notes on DDPMs
+      \item \textbf{T1} Experiment with the network architectures used in the literature
+      \item \textbf{Write-up} Complete Introduction
     \end{itemize}\\
     \hline
     
@@ -296,18 +304,8 @@ The table below outlines my planned timetable for the project. \textbf{Tx} refer
     3 and 4  &
     31/10 -- 13/11 &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item \textbf{T1} Implement DDPMs for unconditional image generation on smaller images
-        \item \textbf{T1} Fine-tune code and parameters
-        \item \textbf{T1} Compare results with \cite{Ho-2020}
-        \item \textbf{Write-up} Write Implementation for \textbf{T1} 
-    \end{itemize}\\
-    \hline
-
-    \textbf{Milestone 1} &
-    &
-    &
-    \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Completed \textbf{T1}
+      \item \textbf{T1} Implement DDPMs for unconditional image generation (at smaller resolutions)
+      \item \textbf{Write-up} Start \textbf{T1} Implementation 
     \end{itemize}\\
     \hline
 
@@ -315,10 +313,19 @@ The table below outlines my planned timetable for the project. \textbf{Tx} refer
     5 and 6  &
     14/11 -- 27/11 &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item \textbf{T2} Make detailed notes on conditional DDPMs for image inpainting
-        \item \textbf{T2} Start implementing conditional DDPMs for inpainting
-        \item \textbf{Write-up} Start writing Preparation
-        \item \textbf{Write-up} Start writing Implementation for \textbf{T2} 
+      \item \textbf{T1} Fine-tune code and parameters
+      \item \textbf{T1} Compare results with \cite{Ho-2020}
+      \item \textbf{Write-up} Complete \textbf{T1} Implementation
+    \end{itemize}\\
+    \hline
+
+    \textbf{Milestone 1} &
+    &
+    &
+    \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+      \item Completed \textbf{T1}
+      \item Completed Introduction for \textbf{Write-up}
+      \item Completed \textbf{T1} Implementation in \textbf{Write-up}
     \end{itemize}\\
     \hline
     
@@ -326,97 +333,149 @@ The table below outlines my planned timetable for the project. \textbf{Tx} refer
     7 and 8  &
     28/11 -- 11/12 &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item \textbf{T2} Fine tune code and parameters
-        \item \textbf{T2} Compare results with \cite{Saharia-2022}
-        \item \textbf{T3} Make notes on the improvements presented in various literature, including \cite{Nichol-2021}
-        \item \textbf{T3} Start incorporating the improvements into the work from \textbf{T2} for image inpainting
-        \item \textbf{Write-up} Continue Preparation
-        \item \textbf{Write-up} Complete Implementation for \textbf{T2}
-        \item \textbf{Write-up} Start writing Implementation for \textbf{T3} 
+      \item \textbf{T2} Make detailed notes on conditional DDPMs for image inpainting
+      \item \textbf{T2} Start implementing conditional DDPMs for inpainting
+      \item \textbf{Write-up} Start \textbf{T2} Implementation
+      \item \textbf{Write-up} Start Preparation
     \end{itemize}\\
     \hline
     
-    \textbf{Milestone 2} &
-    &
-    &
+    \textbf{Break} &
+    9 and 10  &
+    12/12 -- 25/12 &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Completed \textbf{T2}
+      \item Holiday and catch-up
     \end{itemize}\\
     \hline
     
     Package 5 &
-    9 and 10  &
-    12/12 -- 25/12 &
+    11 and 12  &
+    26/12 -- 8/1 &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item \textbf{Write-up} Progress Report
-        \item \textbf{Write-up} Complete Results and Evaluation for \textbf{T1} and \textbf{T2}
-        \item Holiday and catch-up
+      \item \textbf{T2} Finish implementing conditional DDPMs for inpainting
+      \item \textbf{T2} Start fine tuning code and parameters
+      \item \textbf{Write-up} Continue \textbf{T2} Implementation
+      \item \textbf{Write-up} Continue Preparation
     \end{itemize}\\
     \hline
     
     Package 6 &
-    11 and 12  &
-    26/12 -- 8/1 &
+    13 and 14  &
+    9/1 -- 22/1 &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item \textbf{T3} Fine tune code and parameters
-        \item \textbf{T3} Compare with results from \cite{Saharia-2022}
-        \item \textbf{T4} Research and implement segmentation network for image size used by DDPM
-        \item \textbf{Write-up} Complete Implementation for \textbf{T3}
-        \item \textbf{Write-up} Continue Preparation
-        \item \textbf{Write-up} Start writing Implementation for \textbf{T4} 
+      \item \textbf{T2} Finish fine tuning code and parameters
+      \item \textbf{T2} Compare results with \cite{Saharia-2022}
+      \item \textbf{Write-up} Complete \textbf{T2} Implementation
+      \item \textbf{Write-up} Continue Preparation
     \end{itemize}\\
     \hline
-    
-    \textbf{Milestone 3} &
+
+    \textbf{Milestone 2} &
     &
     &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Completed \textbf{T3}
+      \item Completed \textbf{T2}
+      \item Completed \textbf{T2} Implementation in \textbf{Write-up}
     \end{itemize}\\
     \hline
     
     Package 7 &
-    13 and 14  &
-    9/1 -- 22/1 &
+    15 and 16  &
+    23/1 -- 5/2 &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item \textbf{T4} Combine segmentation network with DDPM
-        \item \textbf{Write-up} Complete Preparation
-        \item \textbf{Write-up} Complete Results and Evaluation for \textbf{T3} 
+      \item \textbf{T3} Make notes on the improvements presented in various literature, including \cite{Nichol-2021}
+      \item \textbf{T3} Start incorporating the improvements into the work from \textbf{T2}
+      \item \textbf{Write-up} Start \textbf{T3} Implementation
+      \item \textbf{Write-up} Continue Preparation
+      \item \textbf{Write-up} Progress Report for 3/2
     \end{itemize}\\
     \hline
     
     Package 8 &
-    15 and 16  &
-    23/1 -- 5/2 &
+    17 and 18  &
+    6/2 -- 19/2 &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item \textbf{T4} Build server that runs network
-        \item \textbf{T4} Build web-app that connects to the server
+      \item \textbf{T3} Finish incorporating the improvements into \textbf{T2}
+      \item \textbf{Write-up} Continue \textbf{T3} Implementation
+      \item \textbf{Write-up} Complete Preparation
     \end{itemize}\\
     \hline
     
     Package 9 &
-    17 and 18  &
-    6/2 -- 19/2 &
+    19 and 20  &
+    20/2 -- 5/3 &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item \textbf{T4} Polish the web-app
-        \item \textbf{Write-up} Complete Implementation for \textbf{T4}
-        \item \textbf{Write-up} Complete Evaluation for \textbf{T4}
-        \end{itemize}\\
+      \item \textbf{T3} Fine tune code and parameters
+      \item \textbf{T3} Compare with results from \cite{Saharia-2022}
+      \item \textbf{Write-up} Complete \textbf{T3} Implementation
+      \item \textbf{Write-up} Start Evaluation
+    \end{itemize}\\
     \hline
-    
+
+    \textbf{Milestone 3} &
+    &
+    &
+    \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+      \item Completed \textbf{T3}
+      \item Completed \textbf{T3} Implementation in \textbf{Write-up}
+      \item Completed Preparation
+    \end{itemize}\\
+    \hline
+
+    Package 10 &
+    21 and 22  &
+    6/3 -- 19/3 &
+    \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+      \item \textbf{T4} Research and implement segmentation network for image size used by DDPM
+      \item \textbf{T4} Connect segmentation network with DDPM
+      \item \textbf{Write-up} Start \textbf{T4} Implementation
+      \item \textbf{Write-up} Continue Evaluation
+    \end{itemize}\\
+    \hline
+
+    Package 11 &
+    23 and 24  &
+    20/3 -- 2/4 &
+    \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+      \item \textbf{T4} Build server that runs the models
+      \item \textbf{Write-up} Continue Evaluation
+      \item \textbf{Write-up} Continue \textbf{T4} Implementation
+    \end{itemize}\\
+    \hline
+
+    Package 12 &
+    25 and 26  &
+    3/4 -- 16/4 &
+    \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+      \item \textbf{T4} Build web-app that connects to the server
+      \item \textbf{Write-up} Complete \textbf{T4} Implementation
+      \item \textbf{Write-up} Complete Evaluation
+    \end{itemize}\\
+    \hline
+
     \textbf{Milestone 4} &
     &
     &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Completed \textbf{T4}
+      \item Completed \textbf{T4}
+      \item Completed \textbf{T4} Implementation in \textbf{Write-up}
+      \item Completed Evaluation
     \end{itemize}\\
     \hline
-    
-    Package 10 &
-    19 and 20  &
-    20/2 -- 5/3 &
+
+    Package 13 &
+    27, 28, 29  &
+    17/4 -- 12/5 &
     \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item \textbf{Write-up} Complete Conclusion
+      \item \textbf{Write-up} Complete Conclusion
+    \end{itemize}\\
+    \hline
+
+    \textbf{Milestone 5} &
+    &
+    &
+    \begin{itemize}[label={--},noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+      \item Submission
     \end{itemize}\\
 
 \bottomrule

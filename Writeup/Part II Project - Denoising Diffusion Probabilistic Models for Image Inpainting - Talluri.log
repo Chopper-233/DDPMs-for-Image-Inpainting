@@ -1,0 +1,689 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.13)  14 OCT 2022 20:07
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/prana/OneDrive/Documents/University/II/DDPMs-for-Image-Inpainting/Writeup/Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.tex"
+(c:/Users/prana/OneDrive/Documents/University/II/DDPMs-for-Image-Inpainting/Writeup/Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.tex
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-07-04> (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen147
+)) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen148
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count196
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count197
+\leftroot@=\count198
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count199
+\DOTSCASE@=\count266
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen149
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count267
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count268
+\dotsspace@=\muskip16
+\c@parentequation=\count269
+\dspbrk@lvl=\count270
+\tag@help=\toks19
+\row@=\count271
+\column@=\count272
+\maxfields@=\count273
+\andhelp@=\toks20
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen156
+\Gin@req@width=\dimen157
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count274
+\c@Blindtext=\count275
+\c@blind@countparstart=\count276
+\blind@countxx=\count277
+\blindtext@numBlindtext=\count278
+\blind@countyy=\count279
+\c@blindlist=\count280
+\c@blindlistlevel=\count281
+\c@blindlist@level=\count282
+\blind@listitem=\count283
+\c@blind@listcount=\count284
+\c@blind@levelcount=\count285
+\blind@mathformula=\count286
+\blind@Mathformula=\count287
+\c@blind@randomcount=\count288
+\c@blind@randommax=\count289
+\c@blind@pangramcount=\count290
+\c@blind@pangrammax=\count291
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen158
+\ar@mcellbox=\box53
+\extrarowheight=\dimen159
+\NC@list=\toks23
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box54
+)
+\TX@col@width=\dimen160
+\TX@old@table=\dimen161
+\TX@old@col=\dimen162
+\TX@target=\dimen163
+\TX@delta=\dimen164
+\TX@cols=\count292
+\TX@ftn=\toks24
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen165
+\enit@toks=\toks25
+\enit@inbox=\box55
+\enit@count@id=\count293
+\enitdp@description=\count294
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count295
+\LTcapwidth=\dimen166
+\LT@head=\box56
+\LT@firsthead=\box57
+\LT@foot=\box58
+\LT@lastfoot=\box59
+\LT@gbox=\box60
+\LT@cols=\count296
+\LT@rows=\count297
+\c@LT@tables=\count298
+\c@LT@chunks=\count299
+\LT@p@ftn=\toks26
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen167
+\lightrulewidth=\dimen168
+\cmidrulewidth=\dimen169
+\belowrulesep=\dimen170
+\belowbottomsep=\dimen171
+\aboverulesep=\dimen172
+\abovetopsep=\dimen173
+\cmidrulesep=\dimen174
+\cmidrulekern=\dimen175
+\defaultaddspace=\dimen176
+\@cmidla=\count300
+\@cmidlb=\count301
+\@aboverulesep=\dimen177
+\@belowrulesep=\dimen178
+\@thisruleclass=\count302
+\@lastruleclass=\count303
+\@thisrulewidth=\dimen179
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count304
+)
+\@linkdim=\dimen180
+\Hy@linkcounter=\count305
+\Hy@pagecounter=\count306
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count307
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4408.
+\c@Hy@tempcnt=\count308
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4746.
+\XeTeXLinkMargin=\dimen181
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count309
+\Field@Width=\dimen182
+\Fld@charsize=\dimen183
+Package hyperref Info: Hyper figures OFF on input line 6024.
+Package hyperref Info: Link nesting OFF on input line 6029.
+Package hyperref Info: Hyper index ON on input line 6032.
+Package hyperref Info: backreferencing OFF on input line 6039.
+Package hyperref Info: Link coloring ON on input line 6042.
+Package hyperref Info: Link coloring with OCG OFF on input line 6049.
+Package hyperref Info: PDF/A mode OFF on input line 6054.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count310
+\c@Item=\count311
+\c@Hfootnote=\count312
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-06-20 v7.00s Hyperref driver for pdfTeX
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count313
+\c@bookmark@seq@number=\count314
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip59
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count315
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count316
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count317
+\c@listtotal=\count318
+\c@listcount=\count319
+\c@liststart=\count320
+\c@liststop=\count321
+\c@citecount=\count322
+\c@citetotal=\count323
+\c@multicitecount=\count324
+\c@multicitetotal=\count325
+\c@instcount=\count326
+\c@maxnames=\count327
+\c@minnames=\count328
+\c@maxitems=\count329
+\c@minitems=\count330
+\c@citecounter=\count331
+\c@maxcitecounter=\count332
+\c@savedcitecounter=\count333
+\c@uniquelist=\count334
+\c@uniquename=\count335
+\c@refsection=\count336
+\c@refsegment=\count337
+\c@maxextratitle=\count338
+\c@maxextratitleyear=\count339
+\c@maxextraname=\count340
+\c@maxextradate=\count341
+\c@maxextraalpha=\count342
+\c@abbrvpenalty=\count343
+\c@highnamepenalty=\count344
+\c@lownamepenalty=\count345
+\c@maxparens=\count346
+\c@parenlevel=\count347
+\blx@tempcnta=\count348
+\blx@tempcntb=\count349
+\blx@tempcntc=\count350
+\c@blx@maxsection=\count351
+\blx@maxsegment@0=\count352
+\blx@notetype=\count353
+\blx@parenlevel@text=\count354
+\blx@parenlevel@foot=\count355
+\blx@sectionciteorder@0=\count356
+\blx@sectionciteorderinternal@0=\count357
+\blx@entrysetcounter=\count358
+\blx@biblioinstance=\count359
+\labelnumberwidth=\skip60
+\labelalphawidth=\skip61
+\biblabelsep=\skip62
+\bibitemsep=\skip63
+\bibnamesep=\skip64
+\bibinitsep=\skip65
+\bibparsep=\skip66
+\bibhang=\skip67
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language79
+\c@mincomprange=\count360
+\c@maxcomprange=\count361
+\c@mincompwidth=\count362
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2022/07/12 v3.18b biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count363
+\c@savedafterword=\count364
+\c@annotator=\count365
+\c@savedannotator=\count366
+\c@author=\count367
+\c@savedauthor=\count368
+\c@bookauthor=\count369
+\c@savedbookauthor=\count370
+\c@commentator=\count371
+\c@savedcommentator=\count372
+\c@editor=\count373
+\c@savededitor=\count374
+\c@editora=\count375
+\c@savededitora=\count376
+\c@editorb=\count377
+\c@savededitorb=\count378
+\c@editorc=\count379
+\c@savededitorc=\count380
+\c@foreword=\count381
+\c@savedforeword=\count382
+\c@holder=\count383
+\c@savedholder=\count384
+\c@introduction=\count385
+\c@savedintroduction=\count386
+\c@namea=\count387
+\c@savednamea=\count388
+\c@nameb=\count389
+\c@savednameb=\count390
+\c@namec=\count391
+\c@savednamec=\count392
+\c@translator=\count393
+\c@savedtranslator=\count394
+\c@shortauthor=\count395
+\c@savedshortauthor=\count396
+\c@shorteditor=\count397
+\c@savedshorteditor=\count398
+\c@labelname=\count399
+\c@savedlabelname=\count400
+\c@institution=\count401
+\c@savedinstitution=\count402
+\c@lista=\count403
+\c@savedlista=\count404
+\c@listb=\count405
+\c@savedlistb=\count406
+\c@listc=\count407
+\c@savedlistc=\count408
+\c@listd=\count409
+\c@savedlistd=\count410
+\c@liste=\count411
+\c@savedliste=\count412
+\c@listf=\count413
+\c@savedlistf=\count414
+\c@location=\count415
+\c@savedlocation=\count416
+\c@organization=\count417
+\c@savedorganization=\count418
+\c@origlocation=\count419
+\c@savedoriglocation=\count420
+\c@origpublisher=\count421
+\c@savedorigpublisher=\count422
+\c@publisher=\count423
+\c@savedpublisher=\count424
+\c@language=\count425
+\c@savedlanguage=\count426
+\c@origlanguage=\count427
+\c@savedoriglanguage=\count428
+\c@pageref=\count429
+\c@savedpageref=\count430
+\shorthandwidth=\skip68
+\shortjournalwidth=\skip69
+\shortserieswidth=\skip70
+\shorttitlewidth=\skip71
+\shortauthorwidth=\skip72
+\shorteditorwidth=\skip73
+\locallabelnumberwidth=\skip74
+\locallabelalphawidth=\skip75
+\localshorthandwidth=\skip76
+\localshortjournalwidth=\skip77
+\localshortserieswidth=\skip78
+\localshorttitlewidth=\skip79
+\localshortauthorwidth=\skip80
+\localshorteditorwidth=\skip81
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
+\c@textcitecount=\count431
+\c@textcitetotal=\count432
+\c@textcitemaxnames=\count433
+\c@biburlbigbreakpenalty=\count434
+\c@biburlbreakpenalty=\count435
+\c@biburlnumpenalty=\count436
+\c@biburlucpenalty=\count437
+\c@biburllcpenalty=\count438
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count439
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
+File: numeric.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count440
+\c@bbx:relatedtotal=\count441
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
+File: numeric.cbx 2022/07/12 v3.18b biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-07-04 L3 programming layer (loader) 
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count442
+\l__pdf_internal_box=\box61
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2022-07-04 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2022-06-22 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
+))
+\@quotelevel=\count443
+\@quotereset=\count444
+ (Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.aux)
+\openout1 = `"Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=49.79231pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count445
+\scratchdimen=\dimen184
+\scratchbox=\box62
+\nofMPsegments=\count446
+\nofMParguments=\count447
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count448
+\MPscratchDim=\dimen185
+\MPnumerator=\count449
+\makeMPintoPDFobject=\count450
+\everyMPtoPDFconversion=\toks28
+) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex-dev/graphics\mathcolor.ltx))
+Package hyperref Info: Link coloring ON on input line 21.
+ (Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.out) (Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.out)
+\@outlinefile=\write4
+\openout4 = `"Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.out"'.
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `"Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.bcf"'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file '"Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri".bbl' found.
+ (Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.bbl)
+Package biblatex Info: Reference section=0 on input line 21.
+Package biblatex Info: Reference segment=0 on input line 21.
+ [1
+
+{C:/Users/prana/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] (Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.toc)
+\tf@toc=\write5
+\openout5 = `"Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.toc"'.
+
+ [4] [5] [6] [7] [8] [9]
+
+LaTeX Warning: Empty bibliography on input line 97.
+
+[10] [11] (Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.aux)
+Package rerunfilecheck Info: File `"Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri".out' has not changed.
+(rerunfilecheck)             Checksum: 5FFA22A0DD6D5D8FA9E70DEC314C71C8;500.
+Package logreq Info: Writing requests to '"Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri".run.xml'.
+\openout1 = `"Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.run.xml"'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 17588 strings out of 478338
+ 313911 string characters out of 2836699
+ 1035600 words of memory out of 3000000
+ 35800 multiletter control sequences out of 15000+600000
+ 474216 words of font info for 45 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,6n,77p,1319b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\prana\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on "Part II Project - Denoising Diffusion Probabilistic Models for Image Inpainting - Talluri.pdf" (11 pages, 89038 bytes).
+PDF statistics:
+ 118 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+

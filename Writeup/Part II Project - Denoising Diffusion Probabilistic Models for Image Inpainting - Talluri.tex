@@ -44,6 +44,40 @@ Image inpainting\dots
 \newpage
 \section{Preparation}
 
+PrepWork\dots
+
+\begin{itemize}
+    \item logistic distribution
+    \begin{itemize}
+        \item normal dist but with heavy tails 
+        \item "increases the robustness of analyses based on it compared with using the normal distribution"
+    \end{itemize}
+    \item PixelCNN++
+    \begin{itemize}
+        \item openai implementation of PixelCNN
+        \item tractable likelihood
+        \item "model fully factorizes the probability density function on an image x over all its sub-pixels"
+        \item modification to PixelCNN - discretised logistic mixture likelihood rather than softmax
+        \item modification - conditions on whole pixels rather than rgb vals
+        \item modification - downsampling to encourage long range dependencies
+        \item modification - shortcut connections
+        \item modification - standard binary dropout to prevent overfitting
+    \end{itemize}
+    \item DDPMs (modified PixelCNN++)
+    \begin{itemize}
+        \item replaced weight normalisation to group normalisation - simplicity 
+        \item 4 resolution levels for 32x32 and 6 for 256x256
+        \item two convolutional residual blocks per resolution level
+        \item "self-attention blocks at the 16x16 resolution between the convolutional blocks"
+        \item dropout rate set by sweeping over values
+        \item linear beta schedule
+        \item random horizontal flips
+        \item Adam rather than RMSProp
+        \item batch size is 128 for CIFAR
+        \item EMA set to 0.9999 decay factor
+    \end{itemize}
+\end{itemize}
+
 Related works\dots
 
 Maths behind DDPMs\dots
