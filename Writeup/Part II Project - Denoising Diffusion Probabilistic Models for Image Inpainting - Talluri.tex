@@ -31,15 +31,27 @@
 \newpage
 \section{Introduction}
 
-Deep learning has enabled\dots
+TODO
 
-GANs are popular but have issues\dots
+\subsection{Motivation}
+
+Deep generative models "enabled scalable modeling of complex, high-dimensional data including images, text, and speech" - https://deepgenerativemodels.github.io/
+
+The idea that computers could generate novel, creative works 
+
+"GAN models are known for potentially unstable training and less diversity in generation due to their adversarial training nature. VAE relies on a surrogate loss. Flow models have to use specialized architectures to construct reversible transform." - https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
+
+DPMs - parameterised markov chains trained to denoise data. they are inspired by non-equilibrium statistical physics, where 
+
+DDPMs - DPMs trained on a weighted variational bound designed according to a connection between DPMs and denoising score matching with Langevin Dynamics
 
 DDPMs offer a solution\dots
 
 Applications of DDPMs\dots
 
 Image inpainting\dots
+
+\subsection{Previous Works}
 
 \newpage
 \section{Preparation}
@@ -75,6 +87,10 @@ PrepWork\dots
         \item Adam rather than RMSProp
         \item batch size is 128 for CIFAR
         \item EMA set to 0.9999 decay factor
+    \end{itemize}
+    \item ResNets
+    \begin{itemize}
+        \item 
     \end{itemize}
 \end{itemize}
 
