@@ -2,3 +2,6 @@
 /Literature
 /Exemplary_Dissertations
 *.pt
+/Code/datasets
+/Code/OxfordPetDataset
+/datasets

@@ -2,11 +2,10 @@ import torch
 import torch.nn as nn
 import utils
 from tqdm.auto import tqdm
-from ignite.engine import Engine, Events
-from ignite.metrics import FID, InceptionScore
 import torchvision as tv
 import numpy as np
-import linalg
+from scipy import linalg
+import torchvision.transforms.functional as fn
 
 class DDPM_1_28(nn.Module):
     def __init__(self, network, n_steps=200, min_beta=10**-4, max_beta=0.02, device=None, image_chw=(1, 28, 28), loader=None):
@@ -214,7 +213,8 @@ class DDPM_3_32(nn.Module):
 
     # FROM pytorch-fid
     def calculate_activation_statistics(self, images, dims=2048):
-        self.inception = tv.models.inception_v3(weights='DEFAULT', transform_input=False)#.to(self.device)
+        images = fn.resize(images, (299,299))
+        self.inception = tv.models.inception_v3(weights='DEFAULT', transform_input=False).to(self.device)
         self.inception.eval()
         act = np.empty((len(images), dims))
         
@@ -232,19 +232,19 @@ class DDPM_3_32(nn.Module):
         return mu, sigma
 
     # FROM pytorch-fid
-    def calculate_frechet_distance(mu1, sigma1, mu2, sigma2, eps=1e-6):
-        mu1 = np.atleast_1d(mu1)
-        mu2 = np.atleast_1d(mu2)
+    def calculate_frechet_distance(self, mu_1, sigma1, mu_2, sigma2, eps=1e-6):
+        mu_1 = np.atleast_1d(mu_1)
+        mu_2 = np.atleast_1d(mu_2)
 
         sigma1 = np.atleast_2d(sigma1)
         sigma2 = np.atleast_2d(sigma2)
 
-        assert mu1.shape == mu2.shape, \
+        assert mu_1.shape == mu_2.shape, \
             'Training and test mean vectors have different lengths'
         assert sigma1.shape == sigma2.shape, \
             'Training and test covariances have different dimensions'
 
-        diff = mu1 - mu2
+        diff = mu_1 - mu_2
         
         covmean, _ = linalg.sqrtm(sigma1.dot(sigma2), disp=False)
         if not np.isfinite(covmean).all():
@@ -267,8 +267,11 @@ class DDPM_3_32(nn.Module):
                 np.trace(sigma2) - 2 * tr_covmean)
 
     def calculate_frechet(self, images_real, images_fake):
-        mu_1,std_1 = self.calculate_activation_statistics(images_real)
-        mu_2,std_2 = self.calculate_activation_statistics(images_fake)
+        mu_1, std_1 = self.calculate_activation_statistics(images_real)
+        mu_2, std_2 = self.calculate_activation_statistics(images_fake)
+
+        print("real: ", mu_1, ", ", std_1)
+        print("fake: ", mu_2, ", ", std_2)
         
         fid_value = self.calculate_frechet_distance(mu_1, std_1, mu_2, std_2)
         return fid_value
