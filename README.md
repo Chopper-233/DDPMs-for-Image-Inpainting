@@ -11,6 +11,7 @@ This is my (Pranav Talluri) Part II Project and Dissertation at the University o
 
 ## TODO
 
+- Test impact of attention blocks
 - Test FID score evaluation with larger sample size to generate comparable results with original papers
 - Learn how to use HPC
 - Implement methods for image masking for conditional image generation
