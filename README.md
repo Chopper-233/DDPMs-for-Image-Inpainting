@@ -1,6 +1,6 @@
 This is my (Pranav Talluri) Part II Project and Dissertation at the University of Cambridge.
 
-Completed So Far
+## Completed So Far
 
 - Implemented base UNET
 - Built unconditional image generation for MNIST digits and MNIST fashion (black and white)
@@ -9,18 +9,18 @@ Completed So Far
 - Implemeted FID score based evaluation
 - Notes on unconditional DDPMs
 
-TODO
+## TODO
 
 - Test FID score evaluation with larger sample size to generate comparable results with original papers
 - Learn how to use HPC
 - Implement methods for image masking for conditional image generation
 - Notes on conditional DDPMs
 
-To Learn
+## To Learn
 
 - How to perform training and sampling with conditional DDPM
 
-Reading List
+## Reading List
 
 - Classifier free diffusion guidance - https://arxiv.org/abs/2207.12598
 - Generative modelling with inverse heat dissapation - https://arxiv.org/abs/2206.13397
