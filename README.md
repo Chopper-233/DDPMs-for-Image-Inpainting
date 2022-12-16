@@ -26,5 +26,6 @@ This is my (Pranav Talluri) Part II Project and Dissertation at the University o
 
 ## Reading List
 
+- Free form image inpainting with gated convolution - https://arxiv.org/abs/1806.03589
 - Classifier free diffusion guidance - https://arxiv.org/abs/2207.12598
 - Generative modelling with inverse heat dissapation - https://arxiv.org/abs/2206.13397
