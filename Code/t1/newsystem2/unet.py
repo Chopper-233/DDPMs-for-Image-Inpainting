@@ -160,7 +160,7 @@ class DownSample(Module):
         # conv layer reduces size by factor 2
         self.conv = Conv2d(n_channels, n_channels, kernel_size=(3,3), stride=(2,2), padding=(1,1))
 
-    def forward(self, x: Tensor, t: Tensor):
+    def forward(self, x: Tensor, t: Tensor = None):
         return self.conv(x)
 
 class ResAttnUp(Module):
@@ -185,7 +185,7 @@ class UpSample(Module):
         # transpose conv increases size by scale factor 2
         self.conv = ConvTranspose2d(n_channels, n_channels, kernel_size=(4,4), stride=(2,2), padding=(1,1))
 
-    def forward(self, x: Tensor, t: Tensor):
+    def forward(self, x: Tensor, t: Tensor = None):
         return self.conv(x)
 
 class BottleNeck(Module):
@@ -198,7 +198,7 @@ class BottleNeck(Module):
         self.resUp = ResBlock(n_channels, n_channels, time_channels)
 
     def forward(self, x: Tensor, t: Tensor):
-        return self.resUp(self.attn(self.resDown(x, t)))
+        return self.resUp(self.attn(self.resDown(x, t)), t)
 
 class UNet(Module):
     """UNet"""
@@ -271,7 +271,7 @@ class UNet(Module):
             outputs.append(x)
         
         # bottleneck
-        x = self.middle(x, t)
+        x = self.bottleneck(x, t)
 
         # 2nd half
         for module in self.up:

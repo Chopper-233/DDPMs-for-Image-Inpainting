@@ -7,7 +7,7 @@ import torchvision
 from torchvision.utils import save_image as imsave
 import torchvision.transforms as tvt
 import os
-from tqdm import tqdm
+from tqdm.auto import tqdm
 
 from ddpm import DDPM
 from unet import UNet
@@ -96,13 +96,17 @@ class Experiment:
             self.model.parameters(), lr=self.learning_rate)
 
     def sample(self):
-        shape = (self.n_samples, 3, self.image_size, self.image_size)
-        samp = self.ddpm.p_sample_loop(shape)
-        self.save_image(samp, self.n_steps)
-        return samp
+        shape = (self.n_samples, self.image_channels, self.image_size, self.image_size)
+        samples = self.ddpm.p_sample_loop(shape)
+        for i, sample in enumerate(samples):
+            if i % 100 == 0:
+                self.save_image(sample, i)
+        final = samples[len(samples) - 1]
+        self.save_image(final, self.n_steps)
+        return final
 
     def prog_sample(self):
-        shape = (self.n_samples, 3, self.image_size, self.image_size)
+        shape = (self.n_samples, self.image_channels, self.image_size, self.image_size)
         samps, prog_samps = self.ddpm.p_sample_loop_prog(shape)
         return samps, prog_samps
 
@@ -119,18 +123,33 @@ class Experiment:
             self.optimiser.step()
             pbar.set_description(("loss: " + str(round(loss.item(), 4))))
 
-    def evaluate(self):
-        fake = self.sample()
-        real = next(iter(self.data_loader))[:fake.shape[0]]
-        print(fake.shape)
-        print(real.shape)
+    def fid(self, fake):
+        real = next(iter(self.data_loader))
         assert fake.shape == real.shape
+        fid = self.ddpm.calculate_frechet(real, fake)
+        print(round(fid, 4))
+        return fid
+
+    def bpd(self):
+        x0 = next(iter(self.data_loader)).to(self.device)
+        out = self.ddpm.bpd_loop(x0)
+        total_bpd = out["total_bpd"]
+        bpd = torch.mean(total_bpd).item()
+        print(round(bpd, 4))
+        return bpd
 
     def run(self):
         pbar = tqdm(range(self.epochs))
         for epoch in pbar:
+            print("TRAIN")
             self.train()
-            self.evaluate()
+            print("SAMPLE")
+            fake = self.sample()            
+            print("FID")
+            self.fid(fake)
+            print("BPD")
+            self.bpd()
+            print("SAVING")
             self.save_model(epoch)
 
 

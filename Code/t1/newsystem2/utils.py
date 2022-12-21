@@ -2,18 +2,18 @@ import torch
 from torch import Tensor
 
 def normal_kl(mean1, logvar1, mean2, logvar2):
-    tensor = None
+    t = None
     for obj in (mean1, logvar1, mean2, logvar2):
         if isinstance(obj, Tensor):
-            tensor = obj
+            t = obj
             break
 
-    logvar1, logvar2 = [x if isinstance(x, Tensor) else tensor(x).to(tensor) for x in (logvar1, logvar2)]
+    logvar1, logvar2 = [x if isinstance(x, Tensor) else torch.tensor(x).to(t) for x in (logvar1, logvar2)]
 
     return 0.5 * (-1.0 + logvar2 - logvar1 + torch.exp(logvar1 - logvar2) + ((mean1 - mean2) ** 2) * torch.exp(-logvar2))
 
 def approx_standard_normal_cdf(x):
-    return 0.5 * (1.0 + torch.tanh(torch.sqrt(2.0 / torch.pi) * (x + 0.044715 * torch.pow(x, 3))))
+    return 0.5 * (1.0 + torch.tanh(torch.sqrt(Tensor([2.0 / torch.pi]).to(x.device)) * (x + 0.044715 * torch.pow(x, 3))))
 
 def discretized_gaussian_log_likelihood(x, *, means, log_scales):
     """
