@@ -5,3 +5,15 @@
 /Code/datasets
 /Code/OxfordPetDataset
 /datasets
+*.pyc
+/Code/t1/adapting-ho
+/Code/t1/mnist-experiments/datasets
+/Code/t1/newsystem
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.out
+/Code/t1/newsystem
+/Code/t1/newsystem2/pycache
+/Code/t1/newsystem2/data
